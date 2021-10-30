@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,32 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    	/*通过给td设置高度和宽度，进而确定每一行高度*/
         td {
-            width: 80px;
-            height: 50px;
+            width: 150px;
+            height: 70px;
         }
         caption {
             font-size: 28px;
             margin-bottom: 10px;
         }
-        /*需填内容较多时设置高度*/
         .body td {
             height: 150px;
         }
+    .c
+    {
+        height: 650;
+        background-image: linear-gradient(to bottom right,red,orange,yellow,green,palegreen,blue,purple);
+    }
+    .yc
+    {
+        height: 650;
+        background: red;
+        animation: f 7s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes f
+    {
+        0% {background-color:red ;}
+        20% {background-color:orange;}
+        40% {background-color:yellow;}
+        60% {background-color:green;}
+        80% {background-color:blue;}
+        100% {background-color:purple;}
+    }
     </style>
 </head>
 <body>
-    <table border="1" cellspacing="0" width=“650” align="center">
+    <table class="yc" border="1" cellspacing="0" width=“650” align="center">
         <caption>个人简历</caption>
         <tr align="center">
             <td>姓名</td>
-            <td>杨程</td>
+            <td>罗洁</td>
             <td>性别</td>
-            <td>男</td>
+            <td>女</td>
             <td>出生年月</td>
-            <td>2001.9</td>
-            <td colspan="2" rowspan="4"><img src="luojie.jpg"  width="210" height="320"></td>
+            <td>2001-06-28</td>
+            <td colspan="2" rowspan="4"><img src="图片.jpg"  width="210" height="320"></td>
         </tr>
         <tr align="center">
             <td>祖籍</td>
@@ -57,21 +75,21 @@
             <td colspan="2">云计算技术与应用</td>
         </tr>
         <tr align="center" class="body">
-            <td>兴趣爱好</td>
-            <td colspan="7">看书，追剧，看电影，逛街</td>
+            <td>专业能力</td>
+            <td colspan="7"></td>
         </tr>
         <tr align="center" class="body">
             <td>求职意向</td>
-            <td colspan="7">运维工程师</td>
+            <td colspan="7"></td>
         </tr>
         <tr align="center" class="body">
             <td>获奖情况</td>
-            <td colspan="7">2019年获校级“文艺先进个人” ，2020年获校级“优秀共青团员” </td>
+            <td colspan="7"></td>
         </tr>
         <tr align="center" class="body">
             <td>自我评价</td>
-            <td colspan="7">本人性格开朗，为人细心，做事一丝不苟，能吃苦耐劳，工作脚踏实地，有较强的责任心，具有团队合作精神，又具有较强的独立工作能力，思维活跃。</td>
+            <td colspan="7"></td>
         </tr>
     </table>
 </body>
-</html>
+<html>
